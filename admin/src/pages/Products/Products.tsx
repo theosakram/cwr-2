@@ -1,11 +1,12 @@
 import React from "react";
+import { Navbar } from "../../components";
 
-function Products() {
+const Products: React.FC = () => {
     return (
         <main className="products">
-            <h1>Hello world</h1>
+            <Navbar />
         </main>
     );
-}
+};
 
 export default Products;

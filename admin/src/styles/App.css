@@ -16,7 +16,7 @@
   justify-content: space-evenly;
   padding: 10px;
   z-index: 2;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.08), 0 21px 40px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2), 0 21px 40px 0 rgba(0, 0, 0, 0.3);
 }
 .form span:nth-child(1) {
   background: white;
@@ -124,6 +124,133 @@
   font-size: 15px;
 }
 
+.navbar {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+}
+.navbar .icons,
+.navbar .tags,
+.navbar .settings {
+  display: flex;
+  flex-direction: column;
+  background: #1b998b;
+  background: linear-gradient(180deg, #1b998b 0%, #1b758a 100%);
+}
+.navbar .icons {
+  width: 50px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.navbar .icons a {
+  color: white;
+  opacity: 0.75;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+.navbar .icons a:nth-child(2),
+.navbar .icons a:nth-child(3),
+.navbar .icons a:nth-child(4),
+.navbar .icons a:nth-child(5) {
+  margin-bottom: 50px;
+}
+.navbar .icons a:nth-child(1) {
+  position: absolute;
+  top: 5%;
+  cursor: pointer;
+}
+.navbar .icons a:nth-child(7) {
+  position: absolute;
+  bottom: 5%;
+  cursor: pointer;
+}
+.navbar .icons a:nth-child(1):hover,
+.navbar .icons a:nth-child(7):hover {
+  color: #f9ca24;
+}
+.navbar .tags {
+  width: 100px;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+  align-self: center !important;
+  border-radius: 5px;
+  padding: 15px;
+  z-index: 1;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2), 0 21px 40px 0 rgba(0, 0, 0, 0.3);
+}
+.navbar .tags span {
+  color: white;
+  opacity: 0.75;
+  font-size: 14px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.navbar .tags span:hover {
+  color: #f9ca24;
+}
+.navbar .tags span:nth-child(2) {
+  position: absolute;
+  top: 23.5%;
+}
+.navbar .tags span:nth-child(3) {
+  position: absolute;
+  top: 36.5%;
+}
+.navbar .tags span:nth-child(4) {
+  position: absolute;
+  top: 48.5%;
+}
+.navbar .tags span:nth-child(5) {
+  position: absolute;
+  top: 61.5%;
+}
+.navbar .tags span:nth-child(6) {
+  position: absolute;
+  top: 73.75%;
+}
+.navbar .tags span:nth-child(1) {
+  position: absolute;
+  top: 3.75%;
+  cursor: pointer;
+}
+.navbar .tags span:nth-child(7) {
+  position: absolute;
+  bottom: 3.5%;
+  cursor: pointer;
+}
+.navbar .settings {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  border-radius: 5px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 15px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  z-index: 1;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.2), 0 21px 40px 0 rgba(0, 0, 0, 0.3);
+}
+.navbar .settings span {
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+.navbar .settings span:hover {
+  color: #f9ca24;
+}
+
 .login {
   width: 100%;
   height: 100vh;
@@ -136,7 +263,14 @@
   height: 100vh;
   position: fixed;
   z-index: 1;
-  background: white;
+  background: #f2f2f2;
+}
+
+.products {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #f2f2f2;
 }
 
 .App {
