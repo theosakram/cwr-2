@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "./components/index.scss";
+@import "./pages/index.scss";
+
+.App {
+    font-family: "Noto Sans JP", sans-serif;
+}
